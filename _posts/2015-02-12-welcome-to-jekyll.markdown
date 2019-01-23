@@ -19,7 +19,7 @@ Matthew is a developer who works for a trucking company called Blue Trucks. He's
 
 ### Under the covers
 Creating or initializing a new repository is done with the command `git init`. This command creates a set of files that will be used to track changes to the files you add. The diagram below shows the list of files created. Let's walk through each file and understand it jobs.
-```bash
+```
 $ ls 
 config
 description
@@ -38,7 +38,7 @@ refs/
 ##### *config*
  The config file contains your project-specific configuration options.
 
- ```bash
+ ```
 [core]
         repositoryformatversion = 0
         filemode = false
@@ -55,7 +55,7 @@ refs/
 ##### *description*
 The description file is used only by the Gitweb program and aptly describes the repository by giving it a name.The default contents of the content contain the following:
 
-```bash
+```
 Unnamed repository; edit this file 'description' to name the repository.
 ```
 
@@ -65,7 +65,7 @@ The hooks directory contains your client- or server-side hook scripts.
 ##### *info*
 The info directory keeps a global exclude file for ignored patterns that you don’t want to track in a .gitignore file.
 
-```bash
+```
 " ============================================================================
 " Netrw Directory Listing                                        (netrw v156)
 "   /Playground/blueprints/.git/info
