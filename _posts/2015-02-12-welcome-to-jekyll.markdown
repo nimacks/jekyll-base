@@ -19,7 +19,7 @@ Matthew is a developer who works for a trucking company called Blue Trucks. He's
 
 ### Under the covers
 Creating or initializing a new repository is done with the command `git init`. This command creates a set of files that will be used to track changes to the files you add. The diagram below shows the list of files created. Let's walk through each file and understand it jobs.
-```
+```bash
 $ ls 
 config
 description
@@ -38,7 +38,7 @@ refs/
 ##### *config*
  The config file contains your project-specific configuration options.
 
- ```
+ ```bash
 [core]
         repositoryformatversion = 0
         filemode = false
@@ -55,7 +55,7 @@ refs/
 ##### *description*
 The description file is used only by the Gitweb program and aptly describes the repository by giving it a name.The default contents of the content contain the following:
 
-```
+```bash
 Unnamed repository; edit this file 'description' to name the repository.
 ```
 
@@ -65,7 +65,7 @@ The hooks directory contains your client- or server-side hook scripts.
 ##### *info*
 The info directory keeps a global exclude file for ignored patterns that you don’t want to track in a .gitignore file.
 
-```
+{% highlight bash %}
 " ============================================================================
 " Netrw Directory Listing                                        (netrw v156)
 "   /Playground/blueprints/.git/info
@@ -75,7 +75,7 @@ The info directory keeps a global exclude file for ignored patterns that you don
 " ==============================================================================
 ../                                                                                                                     ./
 exclude*
-```
+{% endhighlight %}
 
 
 ##### *objects*
@@ -84,3 +84,18 @@ The objects directory stores all the content for your database
 The refs directory stores pointers into commit objects in that data (branches, tags, remotes and more)
 
 In part two in this series we'll look at what happens when you add, commit and push to a remote repository.
+
+
+{% highlight java %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-help]: https://github.com/jekyll/jekyll-help
