@@ -19,7 +19,7 @@ Matthew is a developer who works for a trucking company called Blue Trucks. He's
 
 ### Under the covers
 Creating or initializing a new repository is done with the command `git init`. This command creates a set of files that will be used to track changes to the files you add. The diagram below shows the list of files created. Let's walk through each file and understand it jobs.
-```bash
+{% highlight bash %}
 $ ls 
 config
 description
@@ -28,7 +28,7 @@ hooks/
 info/
 objects/
 refs/
-```
+{% endhighlight %}
 
 
 ##### *HEAD* 
@@ -38,7 +38,7 @@ refs/
 ##### *config*
  The config file contains your project-specific configuration options.
 
- ```bash
+{% highlight java %}
 [core]
         repositoryformatversion = 0
         filemode = false
@@ -50,14 +50,14 @@ refs/
 [branch "master"]
         remote = origin
         merge = refs/heads/master
- ```
+ {% endhighlight %}
 
 ##### *description*
 The description file is used only by the Gitweb program and aptly describes the repository by giving it a name.The default contents of the content contain the following:
 
-```bash
+{% highlight bash %}
 Unnamed repository; edit this file 'description' to name the repository.
-```
+{% endhighlight %}
 
 
 ##### *hooks*
